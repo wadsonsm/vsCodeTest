@@ -55,6 +55,14 @@
     console.log(myArray3.slice(1,4))
     */
 
+    /* STRINGS */
+    console.log("Hello world".lastIndexOf("o"));
+    console.log("Hello world".indexOf("o"));
+    console.log("Hello world ".repeat(2));
+    console.log("Hello world ".substr(0,4));
+    console.log("Hello world ".substring(1,4));
+    console.log("Hello world ".split());
+
     
     
 </script>
