@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    -->
+</head>
+<body>
+    
+
+<script>
+    
+    var myArray = [2,4,6,8,10];
+    var myArray2 = [2,3,4,5,6,8,10,11];
+    var myArray3 = [1,2,3];
+    var myArray4 = [8,2,15,10,4,6];
+
+    //console.log(myArray.every(n=>n%2===0))
+    //console.log(myArray2.filter(n => n % 2 !== 0))
+    //console.log( myArray2.find(n => n > 5)) // só o primeiro da condição
+    //console.log(myArray2.findIndex( n => n > 5 )); // o índice do primeiro
+    //console.log(myArray2.some( n => n % 2 !== 0 )) // se pelo menos 1 atende a condição
+    //console.log(myArray3.reduce ((acumulado, atual) => acumulado + atual));
+    /*
+    console.log(myArray4.sort());
+    console.log(myArray4.sort((a,b) => a > b ? 1 : -1 ))
+    */
+    //console.log( myArray3.forEach ( n => {console.log(n)} ))
+    //console.log( myArray3.map( n => n * 2)  )
+
+    //console.log(myArray3.concat(myArray3))
+    //console.log(myArray3.includes(2))
+    //console.log(myArray3.indexOf(3))
+    //console.log(myArray3.join(", "));
+    //console.log('abc'.split('').join('-'));
+    //console.log(myArray3.reverse())
+
+    /*
+    console.log(myArray3.push('asdf')) // insere por último
+        console.log(myArray3);
+        console.log(myArray3.pop()) //exclui o último elemento
+        console.log(myArray3);
+        console.log(myArray3.unshift("wadson"))
+        console.log(myArray3);
+        console.log(myArray3.shift("wadson"))
+        console.log(myArray3);    
+    console.log(myArray3.splice(1,1)) // índice , quantidade
+    console.log(myArray3.splice(2,0,"wadson"))
+    console.log(myArray3);
+    console.log(myArray3.slice(1,4))
+    */
+
+    
+    
+</script>
+
+
+
+</body>
+</html>
