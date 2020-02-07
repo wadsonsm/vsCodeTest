@@ -1,0 +1,75 @@
+/* AULA 02 - Criando a conexão
+var MongoClient = require("mongodb").MongoClient;
+var url = "mongodb://localhost:27017";
+const dbName = "db_devmedia";
+
+MongoClient.connect(url,{ useUnifiedTopology: true } ,function(err, db)
+{
+    if (err) {
+            console.log("Erro ao estabelecer conexão: "+err);
+    } else {
+        console.log("Conexão estabelecida com sucesso");
+        db.close();
+    }    
+});
+*/
+
+/*AULA 03 inserindo documentos
+
+var MongoClient = require("mongodb").MongoClient;
+var url = "mongodb://localhost:27017";
+const dbName = "db_devmedia";
+const client = new MongoClient(url,{ useUnifiedTopology: true });
+
+client.connect(function(err)
+{
+    console.log("Conexão estabelecida com sucesso");
+    const db = client.db(dbName);
+
+    const colecao = db.collection("topicos");
+
+    var topicos = 
+    {
+        titulo: "Erro de compilação",
+        conteudo: "Não consigo compilar meu projeto", 
+        tags : ["Java","Android","Mobile"]
+    };
+
+    colecao.insertOne(topicos, function(erro,  resultado)
+    {
+        if(erro)
+            console.log("Erro ao inserir documento"+erro);
+        else    
+            console.log("Documento inserido com sucesso");
+            client.close();
+    });        
+});
+*/
+
+/* Aula 04: Alteração de documentos */
+var MongoClient = require("mongodb").MongoClient;
+var url = "mongodb://localhost:27017";
+const dbName = "db_devmedia";
+const client = new MongoClient(url,{ useUnifiedTopology: true });
+
+client.connect(function(err, db)
+{
+    if(err)
+    {
+        console.log("Erro ao estabelecer conexão: ",err);
+    }else
+    {
+        console.log("Conexão estabelecida com sucesso !");
+    }
+
+    var usuario =
+    {
+        login: "Maria",
+        senha: "1234567890"
+    }
+
+    var colecao = db.collection("usuarios");
+    colecao
+    
+});
+
