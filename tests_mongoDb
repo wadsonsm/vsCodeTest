@@ -62,14 +62,20 @@ client.connect(function(err, db)
         console.log("Conexão estabelecida com sucesso !");
     }
 
+    
     var usuario =
     {
         login: "Maria",
         senha: "1234567890"
     }
 
-    var colecao = db.collection("usuarios");
-    colecao
+    var colecao = client.db(dbName).collection("usuarios");
+    colecao.updateOne()
+
+    
+    
+
+    
     
 });
 
